@@ -1,59 +1,200 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+### Nexus
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+### Introdução
 
-## About Laravel
+Nexus é uma aplicação para ajudar os estudantes e professores a manterem os horários escolares em dia, ou seja, atualizados, para que ambas as partes fiquem cientes dos horários e dias de aula.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Padrões de Branch
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Aqui na Nexus pode seguir os padrões de branch abaixo:
 
-## Learning Laravel
+| Padrão | Significado |
+|---|---|
+| `feat/atividadeFeita` | **feat** = Funcionalidade nova |
+| `refactor/atividadeFeita` | **refactor** = Atualizando funcionalidade |
+| `docs/atividadeFeita` | **docs** = Criando ou atualizando arquivos de documentação |
+| `test/atividadeFeita` | **test** = Enviando testes de funcionalidade |
+| `chore/atividadeFeita` | **chore** = Usado para arquivos de configuração |
+| `fix/atividadeFeita` | **fix** = Corrigindo bug |
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Padrões de Commit
 
-## Laravel Sponsors
+Aqui na Nexus pode seguir os padrões de commit abaixo:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+| Padrão | Significado |
+|---|---|
+| `(feat): atividadeFeita` | **feat** = Funcionalidade nova |
+| `(refactor): atividadeFeita` | **refactor** = Atualizando funcionalidade |
+| `(docs): atividadeFeita` | **docs** = Criando ou atualizando arquivos de documentação |
+| `(test): atividadeFeita` | **test** = Enviando testes de funcionalidade |
+| `(chore): atividadeFeita` | **chore** = Usado para arquivos de configuração |
+| `(fix): atividadeFeita` | **fix** = Corrigindo bug |
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### Padrões de Pull Request
 
-## Contributing
+Os Pull Requests da Nexus devem seguir um padrão para facilitar a revisão, organização e entendimento das alterações realizadas pela equipe.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Título do Pull Request
 
-## Code of Conduct
+O título deve seguir o mesmo padrão utilizado nos commits:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+````
+(tipo): descrição da atividade
+````
 
-## Security Vulnerabilities
+Onde `tipo` pode ser:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- **feat** = Nova funcionalidade
+- **refactor** = Atualização ou melhoria de uma funcionalidade existente
+- **docs** = Criação ou atualização de documentação
+- **test** = Criação ou atualização de testes
+- **chore** = Configurações, dependências ou tarefas administrativas
+- **fix** = Correção de bug
 
-## License
+### Exemplos
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- `(feat): adiciona cadastro de professores`
+- `(feat): implementa gerenciamento de horários`
+- `(refactor): reorganiza serviço de autenticação`
+- `(fix): corrige atualização do horário da turma`
+- `(test): adiciona testes para cadastro de disciplinas`
+- `(docs): atualiza documentação da API`
+- `(chore): atualiza dependências do projeto`
+
+O título deve ser curto, objetivo e descrever o que foi realizado, evitando descrições genéricas como:
+
+- `(feat): alterações`
+- `(fix): correções`
+- `(refactor): mudanças no código`
+
+### Checklist do Pull Request
+
+Antes de abrir um Pull Request, o responsável deve verificar os seguintes itens:
+
+### Código
+
+- [ ] A implementação segue os padrões definidos pelo projeto.
+- [ ] O código está organizado e legível.
+- [ ] Não existem códigos desnecessários ou comentados.
+- [ ] Não foram adicionadas credenciais, tokens ou informações sensíveis.
+- [ ] A alteração não quebra funcionalidades existentes.
+
+### Testes
+
+- [ ] Foram realizados testes da funcionalidade alterada.
+- [ ] Foram adicionados ou atualizados testes automatizados quando necessário.
+- [ ] Os testes existentes continuam passando.
+- [ ] Foram verificados cenários de erro e casos extremos quando aplicável.
+
+### Banco de Dados
+
+- [ ] As alterações no banco de dados possuem migration quando necessário.
+- [ ] As migrations foram testadas.
+- [ ] Não foram adicionados dados sensíveis desnecessariamente.
+- [ ] Relacionamentos e restrições estão de acordo com o modelo do sistema.
+
+### Documentação
+
+- [ ] A documentação foi atualizada quando necessário.
+- [ ] Novos endpoints, funcionalidades ou regras foram documentados.
+- [ ] Alterações que afetam a utilização do sistema foram descritas no PR.
+
+### Pull Request
+
+- [ ] O título segue o padrão definido pela Nexus.
+- [ ] A descrição explica claramente o que foi alterado.
+- [ ] O PR possui contexto suficiente para ser revisado por outro membro da equipe.
+- [ ] O PR está relacionado à issue/tarefa correspondente, quando existir.
+- [ ] Foram anexadas imagens, vídeos ou exemplos quando a alteração possui impacto visual ou comportamental.
+
+### Descrição do Pull Request
+
+A descrição deve apresentar, de forma objetiva, o que foi desenvolvido e por quê.
+
+Utilize o modelo abaixo:
+
+````markdown
+## Descrição
+
+Descreva brevemente o que foi desenvolvido ou corrigido.
+
+## Motivação
+
+Explique o motivo da alteração e qual problema ela resolve.
+
+## Alterações realizadas
+
+- Alteração 1
+- Alteração 2
+- Alteração 3
+
+## Testes realizados
+
+- Teste 1
+- Teste 2
+- Teste 3
+
+### Evidências
+
+Adicione imagens, vídeos, prints ou exemplos quando necessário.
+
+### Checklist
+
+- [ ] Código revisado
+- [ ] Testes realizados
+- [ ] Documentação atualizada, quando necessário
+- [ ] Sem dados sensíveis
+- [ ] Sem conflitos com a branch principal
+````
+
+### Fluxo de Pull Request
+
+O fluxo recomendado para a Nexus é:
+
+````
+Branch de desenvolvimento
+        ↓
+Implementação
+        ↓
+Commit
+        ↓
+Push
+        ↓
+Pull Request
+        ↓
+Revisão de código
+        ↓
+Correções, se necessário
+        ↓
+Aprovação
+        ↓
+Merge
+````
+
+O Pull Request deve ser criado somente quando a alteração estiver pronta para revisão.
+
+Caso sejam necessárias alterações após a revisão, elas devem ser realizadas na mesma branch do Pull Request.
+
+### Revisão de Pull Request
+
+O responsável pela revisão deve verificar:
+
+- A implementação atende ao objetivo da tarefa.
+- O código segue os padrões do projeto.
+- Não existem problemas evidentes de segurança.
+- Não existem alterações desnecessárias.
+- Os testes são suficientes para a alteração.
+- A alteração não quebra funcionalidades existentes.
+- A estrutura utilizada está adequada ao projeto.
+
+Após a revisão, o Pull Request pode ser:
+
+- **Aprovado:** quando estiver pronto para merge.
+- **Alterações solicitadas:** quando forem necessárias correções antes do merge.
+- **Rejeitado/fechado:** quando a abordagem não for adequada ou a alteração não for mais necessária.
